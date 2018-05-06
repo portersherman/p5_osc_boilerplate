@@ -10,6 +10,9 @@ The clients can send OSC messages from front-end javascript that will be broadca
 
 The host machine can send OSC messages from server-side programs (such as Max/MSP) to front-end javascript on client machines.
 
+"receiveOsc()" can be found in sketch.js
+"sendOsc('/address', [values])" can be called anywhere in front-end javascript
+
 To build, run "npm install" from the project root, and "npm start" on the host machine. Connect clients using through the 
 host machine's public IP on port 8000
 
