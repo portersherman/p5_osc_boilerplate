@@ -3,8 +3,10 @@ var app = express();
 var server = app.listen(8000);
 app.use(express.static("public"));
 
-var osc = require('node-osc'), io = require('socket.io').listen(8080);
-io.set('log level', 1);
+const httpServer = require('http').createServer();
+var osc = require('node-osc'), io = require('socket.io')(httpServer);
+
+httpServer.listen(8080);
 
 var oscServers = {}, oscClients = {};
 

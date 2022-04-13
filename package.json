@@ -12,8 +12,8 @@
     "dgram": "^1.0.1",
     "express": "^4.16.3",
     "node-osc": "^2.1.0",
-    "nodemon": "^1.17.3",
-    "socket.io": "^0.9.19",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1",
     "uglify-js": "^2.6.0"
   }
 }
